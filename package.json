@@ -1,0 +1,19 @@
+{
+  "name": "bcshell",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bearychat": "^1.0.2",
+    "co": "^4.6.0",
+    "delay": "^2.0.0",
+    "invariant": "^2.2.2",
+    "lodash": "^4.17.4",
+    "mz": "^2.6.0",
+    "warning": "^3.0.0",
+    "ws": "^2.3.1"
+  }
+}
