@@ -5,7 +5,7 @@ const invariant = require('invariant');
 const RTMClient = require('./src/RTMClient');
 const RTMClientEvents = require('./src/RTMClientEvents');
 const RTMClientState = require('./src/RTMClientState');
-const HTTPClient = require('./src/HTTPClient');
+const HTTPClient = bearychat.HTTPClient;
 const P2PMessageBuilder = require('./src/builders/P2PMessageBuilder');
 const ChannelMessageBuilder = require('./src/builders/ChannelMessageBuilder');
 
