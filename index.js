@@ -2,9 +2,9 @@ const bearychat = require('bearychat');
 const readline = require('mz/readline');
 const co = require('co');
 const invariant = require('invariant');
-const RTMClient = require('./src/RTMClient');
-const RTMClientEvents = require('./src/RTMClientEvents');
-const RTMClientState = require('./src/RTMClientState');
+const RTMClient = require('bearychat-rtm-client/RTMClient');
+const RTMClientEvents = require('bearychat-rtm-client/RTMClientEvents');
+const RTMClientState = require('bearychat-rtm-client/RTMClientState');
 const HTTPClient = bearychat.HTTPClient;
 const P2PMessageBuilder = require('./src/builders/P2PMessageBuilder');
 const ChannelMessageBuilder = require('./src/builders/ChannelMessageBuilder');
@@ -22,7 +22,12 @@ if (!token) {
 }
 
 const httpClient = new HTTPClient(token);
-const rtmClient = new RTMClient(token);
+const rtmClient = new RTMClient({
+  url() {
+    return httpClient.rtm.start()
+      .then(data => data.ws_host);
+  }
+});
 
 start();
 
