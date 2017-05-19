@@ -51,7 +51,7 @@ function start() {
     console.log('Client closed.');
     rl.close();
   });
-  rtmClient.on(RTMClientEvents.MESSAGE, (message) => {
+  rtmClient.on(RTMClientEvents.EVENT, (message) => {
     switch (message.type) {
       case bearychat.rtm.message.type.P2P_MESSAGE:
       case bearychat.rtm.message.type.CHANNEL_MESSAGE:
