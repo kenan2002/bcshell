@@ -8,11 +8,12 @@
   },
   "dependencies": {
     "bearychat": "^1.1.0",
-    "bearychat-rtm-client": "^0.2.0-alpha2",
+    "bearychat-rtm-client": "^0.2.0-alpha5",
     "co": "^4.6.0",
     "delay": "^2.0.0",
     "invariant": "^2.2.2",
     "lodash": "^4.17.4",
-    "mz": "^2.6.0"
+    "mz": "^2.6.0",
+    "ws": "^3.0.0"
   }
 }

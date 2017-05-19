@@ -8,6 +8,7 @@ const RTMClientState = require('bearychat-rtm-client/RTMClientState');
 const HTTPClient = bearychat.HTTPClient;
 const P2PMessageBuilder = require('./src/builders/P2PMessageBuilder');
 const ChannelMessageBuilder = require('./src/builders/ChannelMessageBuilder');
+const WebSocket = require('ws');
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -26,7 +27,8 @@ const rtmClient = new RTMClient({
   url() {
     return httpClient.rtm.start()
       .then(data => data.ws_host);
-  }
+  },
+  WebSocket: WebSocket
 });
 
 start();
