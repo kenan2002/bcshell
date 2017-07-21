@@ -27,8 +27,8 @@ bearychat-rtm-client@^0.3.0-beta1:
     warning "^3.0.0"
 
 bearychat@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/bearychat/-/bearychat-1.1.0.tgz#d8d3721971537c5017d8bd0434e205c7caeedfcd"
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/bearychat/-/bearychat-1.2.0.tgz#8d31821849d10076eaa082c468b45facf0d033e4"
   dependencies:
     babel-plugin-add-module-exports "^0.2.1"
     isomorphic-fetch "^2.2.1"
@@ -54,8 +54,8 @@ encoding@^0.1.11:
     iconv-lite "~0.4.13"
 
 iconv-lite@~0.4.13:
-  version "0.4.17"
-  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.17.tgz#4fdaa3b38acbc2c031b045d0edcdfe1ecab18c8d"
+  version "0.4.18"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.18.tgz#23d8656b16aae6742ac29732ea8f0336a4789cf2"
 
 invariant@^2.2.2:
   version "2.2.2"
@@ -75,8 +75,8 @@ isomorphic-fetch@^2.2.1:
     whatwg-fetch ">=0.10.0"
 
 js-tokens@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
 lodash@^4.17.4:
   version "4.17.4"
@@ -97,8 +97,8 @@ mz@^2.6.0:
     thenify-all "^1.0.0"
 
 node-fetch@^1.0.1:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.6.3.tgz#dc234edd6489982d58e8f0db4f695029abcd8c04"
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.1.tgz#899cb3d0a3c92f952c47f1b876f4c8aeabd400d5"
   dependencies:
     encoding "^0.1.11"
     is-stream "^1.0.1"
@@ -126,8 +126,8 @@ thenify-all@^1.0.0:
     thenify ">= 3.1.0 < 4"
 
 "thenify@>= 3.1.0 < 4":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/thenify/-/thenify-3.2.1.tgz#251fd1c80aff6e5cf57cb179ab1fcb724269bd11"
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/thenify/-/thenify-3.3.0.tgz#e69e38a1babe969b0108207978b9f62b88604839"
   dependencies:
     any-promise "^1.0.0"
 
