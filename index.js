@@ -74,10 +74,14 @@ function handleMessage(message) {
 }
 
 function *printMessage(message) {
-  const user = yield httpClient.user.info({
-    user_id: message.uid
-  });
-  console.log(`${getUserDiaplay(user)}: ${message.text}`);
+  try {
+    const user = yield httpClient.user.info({
+      user_id: message.uid
+    });
+    console.log(`${getUserDiaplay(user)}: ${message.text}`);
+  } catch (e) {
+    console.log('不支持的消息');
+  }
 }
 
 function *selectFunction() {
